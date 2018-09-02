@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+
+     /*jd导航栏start*/
+    .site-nav {
+        height: 30px;
+        line-height: 30px;
+        background-color: #F1F1F1;
+    }
+    .site-nav-send ,
+    .site-nav-r .fore{
+        position: relative;
+        padding: 0 25px 0 10px;
+    }
+    .site-nav-send:hover {
+        background-color: #ffffff;
+    }
+    .site-nav-send i,
+    .site-nav-r i{
+        position: absolute;
+        top: 12px;
+        right:8px;
+        width: 15px;
+        height: 7px;
+        /*background-color: red;*/
+        overflow: hidden;
+    }
+    .site-nav-send i s,
+    .site-nav-r i s{
+        position: absolute;
+        top: -14px;
+        font: 400 20px/150% "consolas";
+    }
+    /*导航栏右侧*/
+    .site-nav-r li {
+        float: left;
+        padding:0 12px;
+    }
+    .site-nav-r .line {
+        width: 1px;
+        height: 10px;
+        background-color: #ddd;
+        padding: 0;
+        margin-top: 10px;
+    }
+    /*小手机*/
+    .site-nav-r .jd-tel {
+        padding-left: 20px;
+    }
+    .site-nav-r .jd-tel span{
+        position: absolute;
+        display: inline-block;
+        width: 15px;
+        height: 18px;
+        background: url("../images/tel.png") no-repeat;
+        top: 5px;
+        left: 5px;
+    }
+    /*jd导航栏end*/
+    /*行内元素： a span*/
+    /*块元素： div p*/
+    /*行内块： input img*/
+
+    /*top-danner部分start*/
+    .top-danner {
+        background-color: #0932E8;
+    }
+    .top-danner-conter {
+        position: relative;
+    }
+    .close-danner {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        top: 5px;
+        right: 5px;
+        background: url("../images/close-banner.png") no-repeat ;
+    }
+    .close-danner:hover {
+        background-position: bottom;
+    }
+    /*top-danner部分end*/
+
+    /*serach部分start*/
+    .serach-logo {
+        float: left;
+        width: 362px;
+        height: 60px;
+        padding: 20px 0;
+    }
+    .serach-logo a{
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        text-indent: -9999px;
+        background: url("../images/logo.png") no-repeat;
+    }
+    .serach-input {
+        float: left;
+        width: 538px;
+        height: 36px;
+        padding-top: 25px;
+    }
+    .serach-input input {
+        float: left;
+        border: 2px solid #C91623;
+        width: 449px;
+        height: 32px;
+        color: #CFCFCF;
+        font: 400 14px/32px "微软雅黑";
+        padding-left: 4px;
+        border-right: 0px;
+    }
+    .serach-input button {
+        float: left;
+        border:0px;
+        width: 82px;
+        height: 36px;
+        background-color: #C91623;
+        color: #fff;
+        font: 400 16px/36px "微软雅黑";
+        cursor: pointer;
+    }
+    .serach-car {
+        float: right;
+        width: 139px;
+        height: 34px;
+        border: 1px solid #ddd;
+        line-height: 34px;
+        text-align: center;
+        margin: 25px 0 65px 0;
+        background-color: #F9F9F9;
+        position: relative;
+    }
+    .serach-car .serach-car-gwc {
+        position: absolute;
+        background: url("../images/tel.png") no-repeat;
+        background-position: 0 -56px;
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        top: 6px;
+    }
+    .serach-car .serach-car-jt {
+        position: absolute;
+        font: 400 13px/34px "simsun";
+        right: 10px;
+    }
+    .serach-car .serach-car-mag {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 7px 7px 7px 0;
+        background-color: #c00;
+        top: -5px;
+        right: 25px;
+        color: #fff;
+        line-height: 15px;
+    }
+    .serach-moreAlink {
+        float: left;
+        width: 520px;
+        height: 28px;
+    }
+    .serach-moreAlink li{
+        float: left;
+        margin-right:10px;
+    }
+    /*serach部分start*/
+
+
+
+
+
+
+
+
